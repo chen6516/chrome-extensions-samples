@@ -1,3 +1,7 @@
 #editdialog input {
   width: 100%
 }
+
+#btn ~ * {
+  display: none;
+}

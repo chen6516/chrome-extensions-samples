@@ -165,3 +165,13 @@ function dumpNode(bookmarkNode, query) {
 document.addEventListener('DOMContentLoaded', function () {
   dumpBookmarks();
 });
+
+document.querySelector('#btn').addEventListener('click', function () {
+  chrome.tabs.update(
+    {
+      url: 'https://www.google.com',
+      active: false,
+    },
+    (tab) => {},
+  );
+});
